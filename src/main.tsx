@@ -14,12 +14,7 @@ import store from 'state'
 import { isSite } from 'utils/useTools'
 //[ utils ]
 
-//=> 防镜像站
-if (isSite.length <= 0)
-	window.location.href = `https://${Buffer.from(
-		'7777772e6c663131322e6e6574',
-		'hex'
-	).toString()}`
+
 
 //=> 懒加载 Main | '后期装载嵌入式博客可用'
 const mainModule = import.meta.glob('./App.tsx')
